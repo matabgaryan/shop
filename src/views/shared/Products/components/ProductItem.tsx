@@ -20,7 +20,7 @@ export const ProductItem: React.FC<IProductItemProps> = ({product, addProductToC
                     attribute="Price"
                     value={`${product.price}$`} />
                 <AttributeInfo
-                    valueClassName="p-1 bg-oziRed text-white rounded"
+                    valueClassName="p-1 bg-redPrimary text-white rounded"
                     attribute="Weight" value={`${product.weight} kg`} />
                 <AttributeInfo
                     attribute="Start Date"

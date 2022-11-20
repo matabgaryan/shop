@@ -5,6 +5,8 @@ import {adminLogin, setUser} from "../../../store/slices/auth";
 import {useNavigationHook} from "../../../hooks/useNavigation";
 import {ROUTES} from "../../../configs/routes";
 import {useAppDispatch} from "../../../hooks/useRedux";
+import {AppButton} from "../../../components/buttons/BaseButton";
+import {BUTTON_VARIANTS} from "../../../constants/appConstants";
 
 export const AdminLogin = () => {
     const {loading} = useSelector((state: RootState) => state.auth);
@@ -61,20 +63,18 @@ export const AdminLogin = () => {
                         </div>
                         <div
                             className="flex flex-col items-center justify-end mt-6">
-                            <button
-                                className="flex justify-center items-center w-full border border-appBlack bg-appBlack h-[48px] text-white  font-GoogleSansRegular font-[400]  text-[18px] px-6 py-3 rounded  hover:opacity-80   transition-all duration-150"
-                                type="button"
+                            <AppButton
+                                variant={BUTTON_VARIANTS.dark}
                                 onClick={() => handleLogin()}
-                            >
-                                {loading ? 'Loading...' : 'Login'}
-                            </button>
-                            <button
-                                className="mt-2 flex justify-center items-center w-full border border-appBlack bg-white h-[48px] text-black  font-GoogleSansRegular font-[400]  text-[18px] px-6 py-3 rounded  hover:opacity-80   transition-all duration-150"
-                                type="button"
+                                text={`${loading ? 'Loading...' : 'Login'}`}
+                                className="w-full"
+                            />
+                            <AppButton
+                                variant={BUTTON_VARIANTS.transparent}
                                 onClick={() => handleNavigate(ROUTES.home)}
-                            >
-                                Go To User Side
-                            </button>
+                                text="Go To User Side"
+                                className="w-full"
+                            />
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,8 @@ import {useProducts} from "../../../hooks/useProducts";
 import {ProductsList} from "./components/ProductsList";
 import {PageLoader} from "../../../components/loaders/PageLoader";
 import {Container} from "../../../components/container/Container";
+import {AppButton} from "../../../components/buttons/BaseButton";
+import {BUTTON_VARIANTS} from "../../../constants/appConstants";
 
 export const Products = () => {
     const {
@@ -23,22 +25,18 @@ export const Products = () => {
                     </p>
                 </div>
                 <div className="w-full flex items-center justify-end">
-                    <button
-                        data-testid="products-filter-btn"
-                        className={`${showAllProducts ? 'bg-white text-appBlack' : 'bg-appBlack text-white'} py-2.5 px-5 mr-2 mb-2 text-sm font-medium  focus:outline-none rounded-lg border border-gray-200 `}
-                        onClick={() => setShowAllProducts(false)}
-                        type="button"
-                    >
-                        More Probable Products
-                    </button>
-                    <button
-                        data-testid="products-show-all-btn"
-                        className={`${showAllProducts ? 'bg-appBlack text-white' : 'bg-white text-appBlack'} py-2.5 px-5 mr-2 mb-2 text-sm font-medium focus:outline-none  rounded-lg border border-gray-200  `}
-                        onClick={() => setShowAllProducts(true)}
-                        type="button"
-                    >
-                        All Products
-                    </button>
+                    <AppButton
+                        variant={`${showAllProducts ? BUTTON_VARIANTS.transparent : BUTTON_VARIANTS.dark}`}
+                        onClick={() =>  setShowAllProducts(false)}
+                        text="Probable Products"
+                        className={`w-48`}
+                    />
+                    <AppButton
+                        variant={`${showAllProducts ? BUTTON_VARIANTS.dark : BUTTON_VARIANTS.transparent}`}
+                        onClick={() =>  setShowAllProducts(true)}
+                        text=" All Products"
+                        className={`w-48`}
+                    />
                 </div>
                 {isLoading ? <PageLoader/> :
                     <ProductsList products={showAllProducts ? allProducts : mostProbableProducts}/>

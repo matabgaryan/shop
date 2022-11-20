@@ -17,14 +17,14 @@ export const FormInput: React.FC<IFormInputProps> = (props) => {
     return(
         <div className={`mr-0 md:mr-4 ${className}`}>
             <label htmlFor={htmlFor}
-                   className="font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]">
+                   className="formLabel">
                 {labelName}
             </label>
             <input type={type}
                    id={id}
                    name={name}
                    onChange={onChange}
-                   className="w-full lg:w-64 placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md focus:ring-oziLightGrey focus:border-oziLightGrey p-2.5 "
+                   className="w-full lg:w-64 formInput"
                    placeholder={placeholder}
                    required={isRequired} />
         </div>

@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from 'react-router';
-import { Role } from '../../core/enums';
+import {Role, STATUS} from '../../core/enums';
 import { useSelector} from "react-redux";
 import {RootState} from "../../core/types";
 import {checkUserRole} from "../../core/utils/roleUtils";
@@ -9,7 +9,7 @@ export const PrivateRoute = ({ children, roles }: { children: JSX.Element; roles
     let location = useLocation();
     const { isAuthenticated, userInfo, status } = useSelector((state: RootState) => state.auth);
 
-    if (status === 'idle' || status === 'pending')
+    if (status === STATUS.IDLE || status === STATUS.PENDING)
         return (
             <div className="body-center container">
                 <p>Loading...</p>

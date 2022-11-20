@@ -1,0 +1,11 @@
+.baseButton{
+  @apply whitespace-nowrap font-GoogleSansRegular inline-flex items-center justify-center py-2.5 px-5 mr-2 mb-2 text-base border rounded-md shadow-sm font-[400] hover:opacity-80
+}
+
+.button-dark {
+  @apply bg-appBlack hover:opacity-80 text-white
+}
+
+.button-transparent {
+  @apply bg-transparent hover:opacity-80 text-appBlack
+}

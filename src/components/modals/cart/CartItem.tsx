@@ -12,7 +12,7 @@ export const CartItem: React.FC<{product: IProduct, remove: (id: string) => void
                 <p>Item: {product.name} </p>
                 <p>Price: {product.price} </p>
             </div>
-            <button onClick={() => remove(product.id)} className="rounded-md p-2 bg-oziRed text-white text-xs">Delete</button>
+            <button onClick={() => remove(product.id)} className="rounded-md p-2 bg-redPrimary text-white text-xs">Delete</button>
         </div>
     )
 }
