@@ -2,7 +2,8 @@ import React  from 'react'
 import {FormInput} from "../../../components/inputs/FormInput";
 import {Container} from "../../../components/container/Container";
 import {useCreateProductHook} from "../../../hooks/useCreateProduct";
-
+import {AppButton} from "../../../components/buttons/BaseButton";
+import {BUTTON_VARIANTS} from "../../../constants/appConstants";
 
 export const CreateProduct:React.FC = ()  => {
     const { formFields,handleFormChange, handleCancel, submit, addFields, removeFields}= useCreateProductHook();
@@ -51,7 +52,7 @@ export const CreateProduct:React.FC = ()  => {
                                 <div className="flex flex-row  items-start justify-center">
                                     <button
                                         onClick={() => removeFields(index)}
-                                        className=" text-white bg-oziRed hover:opacity-70  font-medium rounded-lg text-sm  px-5 py-2.5 text-center ">
+                                        className=" text-white bg-redPrimary hover:opacity-70  font-medium rounded-lg text-sm  px-5 py-2.5 text-center ">
                                         Remove
                                     </button>
                                 </div>
@@ -70,17 +71,18 @@ export const CreateProduct:React.FC = ()  => {
                 </div>
             </div>
             <div className="flex justify-end mb-8 mt-5">
-                <button
+                <AppButton
+                    variant={BUTTON_VARIANTS.transparent}
                     onClick={() => handleCancel()}
-                    className="mr-4 w-150 text-appBlack bg-transparent hover:opacity-80	 focus:ring-4 font-medium rounded-lg text-sm  px-5 py-2.5 text-center ">
-                    Cancel
-                </button>
-                <button
-                    type="submit"
-                    onClick={submit}
-                    className="w-150 text-white bg-appBlack hover:opacity-70  font-medium rounded-lg text-sm  px-5 py-2.5 text-center ">
-                    Add
-                </button>
+                    text="Cancel"
+                    className="w-150"
+                />
+                <AppButton
+                    variant={BUTTON_VARIANTS.dark}
+                    onClick={(e: React.SyntheticEvent) => submit(e)}
+                    text="Add"
+                    className="w-150"
+                />
             </div>
         </form>
         </div>

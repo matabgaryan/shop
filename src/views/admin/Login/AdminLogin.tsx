@@ -5,6 +5,8 @@ import {adminLogin, setUser} from "../../../store/slices/auth";
 import {useNavigationHook} from "../../../hooks/useNavigation";
 import {ROUTES} from "../../../configs/routes";
 import {useAppDispatch} from "../../../hooks/useRedux";
+import {AppButton} from "../../../components/buttons/BaseButton";
+import {BUTTON_VARIANTS} from "../../../constants/appConstants";
 
 export const AdminLogin = () => {
     const {loading} = useSelector((state: RootState) => state.auth);
@@ -43,7 +45,7 @@ export const AdminLogin = () => {
                                 <input type="text" id="last_name"
                                        value="admin"
                                        disabled={true}
-                                       className="disabled:bg-oziGreyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
+                                       className="disabled:bg-greyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
                                        placeholder="Username" required/>
                             </div>
                             <div>
@@ -55,26 +57,24 @@ export const AdminLogin = () => {
                                     value="admin@example.com"
                                     disabled={true}
                                     type="text" id="last_name"
-                                    className="disabled:bg-oziGreyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
+                                    className="disabled:bg-greyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
                                     placeholder="Email" required/>
                             </div>
                         </div>
                         <div
                             className="flex flex-col items-center justify-end mt-6">
-                            <button
-                                className="flex justify-center items-center w-full border border-appBlack bg-appBlack h-[48px] text-white  font-GoogleSansRegular font-[400]  text-[18px] px-6 py-3 rounded  hover:opacity-80   transition-all duration-150"
-                                type="button"
+                            <AppButton
+                                variant={BUTTON_VARIANTS.dark}
                                 onClick={() => handleLogin()}
-                            >
-                                {loading ? 'Loading...' : 'Login'}
-                            </button>
-                            <button
-                                className="mt-2 flex justify-center items-center w-full border border-appBlack bg-white h-[48px] text-black  font-GoogleSansRegular font-[400]  text-[18px] px-6 py-3 rounded  hover:opacity-80   transition-all duration-150"
-                                type="button"
+                                text={`${loading ? 'Loading...' : 'Login'}`}
+                                className="w-full"
+                            />
+                            <AppButton
+                                variant={BUTTON_VARIANTS.transparent}
                                 onClick={() => handleNavigate(ROUTES.home)}
-                            >
-                                Go To User Side
-                            </button>
+                                text="Go To User Side"
+                                className="w-full"
+                            />
                         </div>
                     </div>
                 </div>

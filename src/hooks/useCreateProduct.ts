@@ -23,25 +23,25 @@ export const useCreateProductHook = () => {
     const submit = (e:React.SyntheticEvent) => {
         e.preventDefault();
         dispatch(addProducts(formFields));
-        handleNavigate(ROUTES.adminProducts)
+        handleNavigate(ROUTES.adminProducts);
     }
 
     const handleCancel = () => {
-       handleNavigate(ROUTES.adminProducts)
+       handleNavigate(ROUTES.adminProducts);
     }
 
     const addFields = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
         let object = {
             id: generatedUuid(), name: '', price: '', weight: 0, startDate: '', endDate: '', count: 0
-        }
-        setFormFields([...formFields, object])
+        };
+        setFormFields([...formFields, object]);
     }
 
     const removeFields = (index: number) => {
         let data = [...formFields];
-        data.splice(index, 1)
-        setFormFields(data)
+        data.splice(index, 1);
+        setFormFields(data);
     }
 
     return {

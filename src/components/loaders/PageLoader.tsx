@@ -1,5 +1,4 @@
 import React from "react";
-import './loader.styles.scss';
 
 export const PageLoader  =() => {
     return(

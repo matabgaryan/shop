@@ -15,12 +15,9 @@ module.exports = {
         'lightGrey': '#959595',
         'tableLightGrey': '#F5F5F5',
         'greyPrimary': '#777777',
-        'oziGreyBorder': '#F7F7F7',
-        'oziGreen': '#66C21E',
-        'oziRed': '#B71111',
-        'oziProgressGrey': '#D9D9D9',
-        'oziPurple': '#6133E3',
-        'oziYellow': '#E0C32A'
+        'greyBorder': '#F7F7F7',
+        'redPrimary': '#B71111',
+        'purple': '#6133E3',
       },
       width: {
         '188': '188px',

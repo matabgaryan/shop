@@ -36,7 +36,7 @@ const CartModal: React.FC<{isOpen: boolean}> = ({isOpen}) => {
             }
         <div className="flex  flex-col items-center justify-center  py-2">
             <div
-                className={` top-0 right-0 w-[30vw] bg-oziGreyBorder px-4 py-4 sm:px-6 ring-black ring-opacity-5 bg-white shadow md:rounded shadow-md fixed h-full z-40  ease-in-out duration-300 
+                className={` top-0 right-0 w-[30vw] bg-greyBorder px-4 py-4 sm:px-6 ring-black ring-opacity-5 bg-white shadow md:rounded shadow-md fixed h-full z-40  ease-in-out duration-300 
                  ${
                     isOpen ? "translate-x-0 " : "translate-x-full"
                 }`}

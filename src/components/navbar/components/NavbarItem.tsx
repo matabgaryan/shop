@@ -27,7 +27,7 @@ export const NavbarItem: React.FC<INavItemProps> = ( {navItem}) => {
             </NavLink>
             {
                 activeRoute === navItem.path &&
-                <p className="w-[14px] h-[3px] bg-oziPurple"/>
+                <p className="w-[14px] h-[3px] bg-purple"/>
             }
         </div>
     )

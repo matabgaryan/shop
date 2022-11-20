@@ -1,0 +1,7 @@
+.formInput{
+  @apply placeholder-lightGrey  bg-transparent border border-lightGrey text-gray-900 text-sm rounded-md focus:ring-lightGrey focus:border-lightGrey p-2.5
+}
+
+.formLabel{
+  @apply font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]
+}
