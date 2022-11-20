@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Item cases Take Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container mx-auto p-6 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"
+    data-testid="product-item"
+  >
+    <img
+      alt="Product"
+      class="rounded-xl"
+      src="productItem.jpeg"
+    />
+    <div
+      class="flex flex-col"
+    >
+      <h1
+        class="mt-5 text-lg font-semibold"
+        data-testid="product-item-name"
+      >
+        Product 1
+      </h1>
+      <div
+        class="flex flex-row justify-between mb-1 items-center"
+      >
+        <div
+          class="text-base font-light tracking-normal"
+        >
+          Price
+        </div>
+        <div
+          class="text-base font-regular font-light tracking-normal undefined"
+        >
+          30$
+        </div>
+      </div>
+      <div
+        class="flex flex-row justify-between mb-1 items-center"
+      >
+        <div
+          class="text-base font-light tracking-normal"
+        >
+          Weight
+        </div>
+        <div
+          class="text-base font-regular font-light tracking-normal p-1 bg-oziRed text-white rounded"
+        >
+          100 kg
+        </div>
+      </div>
+      <div
+        class="flex flex-row justify-between mb-1 items-center"
+      >
+        <div
+          class="text-base font-light tracking-normal"
+        >
+          Start Date
+        </div>
+        <div
+          class="text-base font-regular font-light tracking-normal undefined"
+        >
+          May 10, 2022
+        </div>
+      </div>
+      <div
+        class="flex flex-row justify-between mb-1 items-center"
+      >
+        <div
+          class="text-base font-light tracking-normal"
+        >
+          End Date
+        </div>
+        <div
+          class="text-base font-regular font-light tracking-normal undefined"
+        >
+          May 10, 2022
+        </div>
+      </div>
+    </div>
+    <div
+      class="mt-6 text-center"
+    >
+      <button
+        class="text-white text-sm	 font-semibold bg-appBlack py-1 px-2 rounded-md shadow-md  transition duration-500 transform-gpu  "
+      >
+        Add To Card
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

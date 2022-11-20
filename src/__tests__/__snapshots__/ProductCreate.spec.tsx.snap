@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Products Take Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="mt-16 mx-auto max-w-4xl w-full flex flex-col items-center"
+    >
+      <p
+        class="mb-8 font-GoogleSansBold text-[18px] text-appBlack font-[700]"
+      >
+        Configure Product
+      </p>
+      <form>
+        <div
+          class="grid gap-4  mb-6 lg:grid-cols-3 mb-6 rounded-sm border-b border-lightGrey	pb-4"
+        >
+          <div
+            class="mr-0 md:mr-4 undefined"
+          >
+            <label
+              class="font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]"
+            >
+              Name
+            </label>
+            <input
+              class="w-full lg:w-64 placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md focus:ring-oziLightGrey focus:border-oziLightGrey p-2.5 "
+              name="name"
+              placeholder="Specify product name"
+              type="text"
+            />
+          </div>
+          <div
+            class="mr-0 md:mr-4 undefined"
+          >
+            <label
+              class="font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]"
+            >
+              Price
+            </label>
+            <input
+              class="w-full lg:w-64 placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md focus:ring-oziLightGrey focus:border-oziLightGrey p-2.5 "
+              name="price"
+              placeholder="Specify product price"
+              type="text"
+            />
+          </div>
+          <div
+            class="mr-0 md:mr-4 undefined"
+          >
+            <label
+              class="font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]"
+            >
+              Weight
+            </label>
+            <input
+              class="w-full lg:w-64 placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md focus:ring-oziLightGrey focus:border-oziLightGrey p-2.5 "
+              name="weight"
+              placeholder="Weight"
+              type="text"
+            />
+          </div>
+          <div
+            class="mr-0 md:mr-4 undefined"
+          >
+            <label
+              class="font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]"
+            >
+              Start Date
+            </label>
+            <input
+              class="w-full lg:w-64 placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md focus:ring-oziLightGrey focus:border-oziLightGrey p-2.5 "
+              name="startDate"
+              placeholder="Start Date"
+              type="text"
+            />
+          </div>
+          <div
+            class="mr-0 md:mr-4 undefined"
+          >
+            <label
+              class="font-[400] pl-4 block mb-2 text-sm font-GoogleSansRegular text-black text-[16px]"
+            >
+              End Date
+            </label>
+            <input
+              class="w-full lg:w-64 placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md focus:ring-oziLightGrey focus:border-oziLightGrey p-2.5 "
+              name="endDate"
+              placeholder="End Date"
+              type="text"
+            />
+          </div>
+          <div
+            class="flex flex-row  items-start justify-center"
+          >
+            <button
+              class=" text-white bg-oziRed hover:opacity-70  font-medium rounded-lg text-sm  px-5 py-2.5 text-center "
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+        <div>
+          <div
+            class="flex items-start justify-center"
+          >
+            <button
+              class="text-appBlack text-[16px] font-GoogleSansRegular font-[400] focus:outline-none  text-center"
+            >
+              + Add more
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex justify-end mb-8 mt-5"
+        >
+          <button
+            class="mr-4 w-150 text-appBlack bg-transparent hover:opacity-80	 focus:ring-4 font-medium rounded-lg text-sm  px-5 py-2.5 text-center "
+          >
+            Cancel
+          </button>
+          <button
+            class="w-150 text-white bg-appBlack hover:opacity-70  font-medium rounded-lg text-sm  px-5 py-2.5 text-center "
+            type="submit"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products Renders Init Products 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="w-full flex flex-col items-center"
+    >
+      <div
+        class="w-full"
+      >
+        <p
+          class="text-appBlack font-GoogleSansBold font-[700] text-[22px]"
+        >
+          Shop by Collection
+        </p>
+        <p
+          class="max-w-2xl font-GoogleSansRegular font-[400] text-[18px] text-appBlack"
+        >
+          Each season, we collaborate with world class designers to create a collection inspired by natural world.
+        </p>
+      </div>
+      <div
+        class="w-full flex items-center justify-end"
+      >
+        <button
+          class="bg-white text-appBlack py-2.5 px-5 mr-2 mb-2 text-sm font-medium  focus:outline-none rounded-lg border border-gray-200 "
+          data-testid="products-filter-btn"
+          type="button"
+        >
+          More Probable Products
+        </button>
+        <button
+          class="bg-appBlack text-white py-2.5 px-5 mr-2 mb-2 text-sm font-medium focus:outline-none  rounded-lg border border-gray-200  "
+          data-testid="products-show-all-btn"
+          type="button"
+        >
+          All Products
+        </button>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center min-h-[50%]			"
+      >
+        <div
+          class="flex space-x-1 mt-3  rounded-full justify-center items-center"
+        >
+          <div
+            class="bg-appBlack  w-2 h-2 rounded-full animate-pulse blue-circle"
+          />
+          <div
+            class="bg-appBlack  w-2 h-2 rounded-full animate-pulse green-circle"
+          />
+          <div
+            class="bg-appBlack  w-2 h-2 rounded-full animate-pulse red-circle"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
