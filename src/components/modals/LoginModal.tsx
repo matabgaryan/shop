@@ -52,7 +52,7 @@ export default function LoginModal( { isOpen }: {isOpen: boolean}) {
                                         <input type="text" id="username"
                                                value="username"
                                                disabled={true}
-                                               className="cursor-not-allowed disabled:bg-oziGreyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
+                                               className="cursor-not-allowed disabled:bg-greyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
                                                placeholder="Username" required/>
                                     </div>
                                     <div>
@@ -63,7 +63,7 @@ export default function LoginModal( { isOpen }: {isOpen: boolean}) {
                                         <input type="text" id="email"
                                                value="user@email.com"
                                                disabled={true}
-                                               className="cursor-not-allowed disabled:bg-oziGreyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
+                                               className="cursor-not-allowed disabled:bg-greyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
                                                placeholder="Email" required/>
                                     </div>
                                 </div>

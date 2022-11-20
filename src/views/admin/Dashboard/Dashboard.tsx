@@ -35,7 +35,7 @@ export const AdminDashboard = () => {
                     </div>
                     <table
                         className="mt-4 border-separate border-spacing-0 w-full table-auto rounded-[10px] border border-[rgba(200, 200, 200, 0.5)] pt-8 shadow-[2px_2px_10px_0px_#C8C8C880]">
-                        <thead className="border-b border-oziGreyBorder">
+                        <thead className="border-b border-greyBorder">
                         <tr className="bg-white text-appBlack">
                             <td className="py-3 px-6 font-GoogleSansRegular text-[15px] text-greyPrimary">Name</td>
                             <td className="py-3 px-6 font-GoogleSansRegular text-[15px] text-greyPrimary">Weight</td>

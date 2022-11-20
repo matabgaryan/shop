@@ -4,7 +4,7 @@ import {IProduct} from "../../../store/slices/interface";
 export const CartItem: React.FC<{product: IProduct, remove: (id: string) => void}> = ({product, remove}) => {
     return(
         <div
-            className="mb-2 flex flex-row items-center justify-between border rounded-md border-oziGreyBorder p-2 "
+            className="mb-2 flex flex-row items-center justify-between border rounded-md border-greyBorder p-2 "
             key={product.id}
         >
             <div

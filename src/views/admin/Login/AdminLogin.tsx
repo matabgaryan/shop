@@ -43,7 +43,7 @@ export const AdminLogin = () => {
                                 <input type="text" id="last_name"
                                        value="admin"
                                        disabled={true}
-                                       className="disabled:bg-oziGreyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
+                                       className="disabled:bg-greyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
                                        placeholder="Username" required/>
                             </div>
                             <div>
@@ -55,7 +55,7 @@ export const AdminLogin = () => {
                                     value="admin@example.com"
                                     disabled={true}
                                     type="text" id="last_name"
-                                    className="disabled:bg-oziGreyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
+                                    className="disabled:bg-greyBorder disabled:opacity-50 w-full h-[58px]  placeholder-lightGrey  bg-transparent border border-oziLightGrey text-gray-900 text-sm rounded-md    p-2.5 "
                                     placeholder="Email" required/>
                             </div>
                         </div>
