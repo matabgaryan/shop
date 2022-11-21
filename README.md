@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+## Getting started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can view a live demo over at https://matabgaryan.github.io/shop/
 
-## Available Scripts
+To get the frontend running locally:
 
-In the project directory, you can run:
+- Clone this repo
+- `npm install` to install all req'd dependencies
+- `npm start` to start the local server (this project uses create-react-app)
+- `npm test` to run tests
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For Deployment:
+- `npm run deploy` to deploy new changes 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Project Description
+Simple shop website has two Layouts `AdminLayout` and `UserLayout`.
+For managing Different layouts and privileges I used `Role based authenticatin.`
+Also there is `Public` and `Private` routes for managing user route actions.
+User data is hardcoded , so for authentication there is no need to type anything inside login forms, just click `Login` button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Filtration products 
+For Filtration products I used `Weighted Random algorithm`. This `algorithm`  randomly return you the item from the products list and it will take each item's weight into account, so that items with the higher weight will be picked more often.
+  - ##### Weighted Random Algorithm Resources
+    - https://www.educative.io/answers/what-is-the-weighted-random-selection-algorithm
+    - https://dev.to/trekhleb/weighted-random-algorithm-in-javascript-1pdc`
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Routes
+- `Admin` Has privilege to create either a single shop item at a time or bulk-create several items at a time.
+  ##### Admin Routes
+    - `/shop/admin/login` Auth
+    - `/shop/admin/dashboard` Dashboard
+    - `/shop/admin/products` List of products
+    - `/shop/admin/products/create` For creating products
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `User` Can see products list. Add products in his/her shopping cart and Remove from it.
+  ##### User Routes
+    - `/shop` Home page
+    - `/shop/products` List of products
+    
+## Technology Stack
+* [React](https://reactjs.org/docs/getting-started.html)
+* [Redux](https://react-redux.js.org/introduction/getting-started)
+* [Redux-toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+* [Typescript](https://www.typescriptlang.org/)
+* [Tailwindcss](https://tailwindcss.com/docs/installation)
+* [Jest](https://jestjs.io/docs/getting-started)
+* [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Folder And File Structure
+```
+src
+├── mocks
+├── tests
+├── assets
+├── components                                     
+├── config
+├── constants
+├── containers
+├── core
+│       ├── api
+│       ├── services
+│       │        ├── ProductsFilter.ts
+│       └── data
+├── hooks
+│    ├── useProducts.ts
+├── router
+├── store        
+├── views
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+    
