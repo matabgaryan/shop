@@ -8,7 +8,7 @@ import {store} from "./store/store";
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename='/shop'>
                 <Provider store={store}>
                     <AppWrapper />
                 </Provider>
